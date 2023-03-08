@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            /* background-color: aquamarine; */
+        }
+        .grandparent{
+            margin: auto;
+            width: 60%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+        }
+        .parent{
+            margin: 2rem auto;
+            width: 60%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            background-color: aquamarine;
+        }
+        .child{
+            margin: 1rem auto;
+            padding: 1rem;
+            width: 30%;
+            height: 40%;
+            background-color: rgb(68, 121, 103);
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent" id="grand-parent"><p>Hello</p>
+        <div class="parent">
+            <div class="child">
+                <p>Inside child1</p>
+            </div>
+            <div class="child">
+                <p>Inside child2</p>
+
+            </div>
+        </div>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+        <input type="hidden" name="up" />
+        <input type="hidden" name="down" />
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="ByClass.js"></script> -->
+    <!-- <script src="selector.js"></script> -->
+    <!-- <script src="selectorAll.js"></script> -->
+    <!-- <script src="QuerySelectorDescendent.js"></script> -->
+    <!-- <script src="Mixedselector.js"></script> -->
+    <script src="ByClass.js"></script>
+    <script src="ByName.js"></script>
+    <script src="ByTagName.js"></script>
+
+</body>
+</html>
